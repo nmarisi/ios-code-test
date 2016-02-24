@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		4D7C1C511C7B040300D66560 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C1C501C7B040300D66560 /* AppDelegate.swift */; };
-		4D7C1C531C7B040300D66560 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C1C521C7B040300D66560 /* ViewController.swift */; };
 		4D7C1C561C7B040300D66560 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D7C1C541C7B040300D66560 /* Main.storyboard */; };
 		4D7C1C581C7B040300D66560 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D7C1C571C7B040300D66560 /* Assets.xcassets */; };
 		4D7C1C5B1C7B040300D66560 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D7C1C591C7B040300D66560 /* LaunchScreen.storyboard */; };
 		4D7C1C661C7B040300D66560 /* fibonacci_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C1C651C7B040300D66560 /* fibonacci_testTests.swift */; };
 		4D7C1C711C7B040300D66560 /* fibonacci_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C1C701C7B040300D66560 /* fibonacci_testUITests.swift */; };
+		4D7C1C821C7B049000D66560 /* FibonacciTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C1C811C7B049000D66560 /* FibonacciTableViewController.swift */; };
+		4D7C1C841C7B04A900D66560 /* FibonacciTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C1C831C7B04A900D66560 /* FibonacciTableViewCell.swift */; };
+		4D7C1C861C7B04BC00D66560 /* FibonacciGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C1C851C7B04BC00D66560 /* FibonacciGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		4D7C1C4D1C7B040300D66560 /* fibonacci-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fibonacci-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D7C1C501C7B040300D66560 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4D7C1C521C7B040300D66560 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4D7C1C551C7B040300D66560 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4D7C1C571C7B040300D66560 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D7C1C5A1C7B040300D66560 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		4D7C1C6C1C7B040300D66560 /* fibonacci-testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "fibonacci-testUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D7C1C701C7B040300D66560 /* fibonacci_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fibonacci_testUITests.swift; sourceTree = "<group>"; };
 		4D7C1C721C7B040300D66560 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D7C1C811C7B049000D66560 /* FibonacciTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FibonacciTableViewController.swift; path = Controllers/FibonacciTableViewController.swift; sourceTree = "<group>"; };
+		4D7C1C831C7B04A900D66560 /* FibonacciTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FibonacciTableViewCell.swift; path = Views/FibonacciTableViewCell.swift; sourceTree = "<group>"; };
+		4D7C1C851C7B04BC00D66560 /* FibonacciGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FibonacciGenerator.swift; path = Models/FibonacciGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,10 @@
 		4D7C1C4F1C7B040300D66560 /* fibonacci-test */ = {
 			isa = PBXGroup;
 			children = (
+				4D7C1C801C7B044800D66560 /* Models */,
+				4D7C1C7F1C7B043D00D66560 /* Views */,
+				4D7C1C7E1C7B043600D66560 /* Controllers */,
 				4D7C1C501C7B040300D66560 /* AppDelegate.swift */,
-				4D7C1C521C7B040300D66560 /* ViewController.swift */,
 				4D7C1C541C7B040300D66560 /* Main.storyboard */,
 				4D7C1C571C7B040300D66560 /* Assets.xcassets */,
 				4D7C1C591C7B040300D66560 /* LaunchScreen.storyboard */,
@@ -123,6 +129,30 @@
 				4D7C1C721C7B040300D66560 /* Info.plist */,
 			);
 			path = "fibonacci-testUITests";
+			sourceTree = "<group>";
+		};
+		4D7C1C7E1C7B043600D66560 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4D7C1C811C7B049000D66560 /* FibonacciTableViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		4D7C1C7F1C7B043D00D66560 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4D7C1C831C7B04A900D66560 /* FibonacciTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		4D7C1C801C7B044800D66560 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4D7C1C851C7B04BC00D66560 /* FibonacciGenerator.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +286,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D7C1C531C7B040300D66560 /* ViewController.swift in Sources */,
+				4D7C1C861C7B04BC00D66560 /* FibonacciGenerator.swift in Sources */,
+				4D7C1C821C7B049000D66560 /* FibonacciTableViewController.swift in Sources */,
+				4D7C1C841C7B04A900D66560 /* FibonacciTableViewCell.swift in Sources */,
 				4D7C1C511C7B040300D66560 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
