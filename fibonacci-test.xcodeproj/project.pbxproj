@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D7255A71C7E3C2A001D00A2 /* FibonacciDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7255A61C7E3C2A001D00A2 /* FibonacciDataSource.swift */; };
 		4D7C1C511C7B040300D66560 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C1C501C7B040300D66560 /* AppDelegate.swift */; };
 		4D7C1C561C7B040300D66560 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D7C1C541C7B040300D66560 /* Main.storyboard */; };
 		4D7C1C581C7B040300D66560 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D7C1C571C7B040300D66560 /* Assets.xcassets */; };
 		4D7C1C5B1C7B040300D66560 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D7C1C591C7B040300D66560 /* LaunchScreen.storyboard */; };
-		4D7C1C661C7B040300D66560 /* fibonacci_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C1C651C7B040300D66560 /* fibonacci_testTests.swift */; };
 		4D7C1C821C7B049000D66560 /* FibonacciTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C1C811C7B049000D66560 /* FibonacciTableViewController.swift */; };
 		4D7C1C841C7B04A900D66560 /* FibonacciTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C1C831C7B04A900D66560 /* FibonacciTableViewCell.swift */; };
 		4D7C1C861C7B04BC00D66560 /* FibonacciGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C1C851C7B04BC00D66560 /* FibonacciGenerator.swift */; };
 		4D7C1C951C7E09FF00D66560 /* FibonacciGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C1C941C7E09FF00D66560 /* FibonacciGeneratorTests.swift */; };
+		4DB7E7651C7E187E00A184DC /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7E7641C7E187E00A184DC /* DataProvider.swift */; };
+		4DDEDED21C7E60E000D2CCE7 /* DataProviderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDEDED11C7E60E000D2CCE7 /* DataProviderTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D7255A61C7E3C2A001D00A2 /* FibonacciDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FibonacciDataSource.swift; path = Controllers/FibonacciDataSource.swift; sourceTree = "<group>"; };
 		4D7C1C4D1C7B040300D66560 /* fibonacci-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fibonacci-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D7C1C501C7B040300D66560 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D7C1C551C7B040300D66560 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -36,12 +39,13 @@
 		4D7C1C5A1C7B040300D66560 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D7C1C5C1C7B040300D66560 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D7C1C611C7B040300D66560 /* fibonacci-testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "fibonacci-testTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D7C1C651C7B040300D66560 /* fibonacci_testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fibonacci_testTests.swift; sourceTree = "<group>"; };
 		4D7C1C671C7B040300D66560 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D7C1C811C7B049000D66560 /* FibonacciTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FibonacciTableViewController.swift; path = Controllers/FibonacciTableViewController.swift; sourceTree = "<group>"; };
 		4D7C1C831C7B04A900D66560 /* FibonacciTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FibonacciTableViewCell.swift; path = Views/FibonacciTableViewCell.swift; sourceTree = "<group>"; };
 		4D7C1C851C7B04BC00D66560 /* FibonacciGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FibonacciGenerator.swift; path = Models/FibonacciGenerator.swift; sourceTree = "<group>"; };
 		4D7C1C941C7E09FF00D66560 /* FibonacciGeneratorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FibonacciGeneratorTests.swift; sourceTree = "<group>"; };
+		4DB7E7641C7E187E00A184DC /* DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataProvider.swift; path = Models/DataProvider.swift; sourceTree = "<group>"; };
+		4DDEDED11C7E60E000D2CCE7 /* DataProviderTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProviderTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,9 +102,9 @@
 		4D7C1C641C7B040300D66560 /* fibonacci-testTests */ = {
 			isa = PBXGroup;
 			children = (
-				4D7C1C651C7B040300D66560 /* fibonacci_testTests.swift */,
 				4D7C1C671C7B040300D66560 /* Info.plist */,
 				4D7C1C941C7E09FF00D66560 /* FibonacciGeneratorTests.swift */,
+				4DDEDED11C7E60E000D2CCE7 /* DataProviderTest.swift */,
 			);
 			path = "fibonacci-testTests";
 			sourceTree = "<group>";
@@ -109,6 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				4D7C1C811C7B049000D66560 /* FibonacciTableViewController.swift */,
+				4DB7E7641C7E187E00A184DC /* DataProvider.swift */,
+				4D7255A61C7E3C2A001D00A2 /* FibonacciDataSource.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -232,8 +238,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D7C1C861C7B04BC00D66560 /* FibonacciGenerator.swift in Sources */,
+				4D7255A71C7E3C2A001D00A2 /* FibonacciDataSource.swift in Sources */,
 				4D7C1C821C7B049000D66560 /* FibonacciTableViewController.swift in Sources */,
 				4D7C1C841C7B04A900D66560 /* FibonacciTableViewCell.swift in Sources */,
+				4DB7E7651C7E187E00A184DC /* DataProvider.swift in Sources */,
 				4D7C1C511C7B040300D66560 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,8 +250,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DDEDED21C7E60E000D2CCE7 /* DataProviderTest.swift in Sources */,
 				4D7C1C951C7E09FF00D66560 /* FibonacciGeneratorTests.swift in Sources */,
-				4D7C1C661C7B040300D66560 /* fibonacci_testTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

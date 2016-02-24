@@ -18,10 +18,6 @@ class FibonacciGeneratorTests: XCTestCase {
         sequence = GeneratorSequence(FibonacciGenerator())
     }
     
-    override func tearDown() {
-        super.tearDown()
-    }
-    
     func testGenerateUntilUIntMax() {
         
         guard let seq = sequence else {

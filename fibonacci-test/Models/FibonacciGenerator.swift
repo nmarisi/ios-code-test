@@ -2,7 +2,7 @@
 //  FibonacciGenerator.swift
 //  fibonacci-test
 //
-//  Created by Nahuel Marisi on 2016-02-22.
+//  Created by Nahuel Marisi on 2016-02-24.
 //  Copyright © 2016 TechBrewers. All rights reserved.
 //
 

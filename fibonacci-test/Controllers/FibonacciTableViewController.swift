@@ -2,49 +2,22 @@
 //  FibonacciTableViewController.swift
 //  fibonacci-test
 //
-//  Created by Nahuel Marisi on 2016-02-22.
+//  Created by Nahuel Marisi on 2016-02-24.
 //  Copyright © 2016 TechBrewers. All rights reserved.
 //
 
 import UIKit
 
-class FibonacciTableViewController: UITableViewController {
-    
-    private let reuseIdentifier = "FibonacciTableViewCell"
-    private var sequence = GeneratorSequence(FibonacciGenerator())
-    private var generatedNumbers  = [UInt]()
+private let frequencyOfNewData = 10
 
-    private let initialNumberOfElements = 20 // Set the initial number of elements in the data source
-    private let frequencyOfNewData = 10
-    private var maxIndexPathReached = 0
-   
-    private var number: UInt = 0
+final class FibonacciTableViewController: UITableViewController {
     
+    private var maxIndexPathReached =  initialNumberOfElements - 1
+    private let dataSource = FibonacciDataSource<FibonacciTableViewCell >(frequencyOfNewData: frequencyOfNewData)
+   
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Load the first 20 numbers in the sequence and update the maximum Index Path
-        // currently on the tableView
-        generateNextSet(initialNumberOfElements)
-        maxIndexPathReached = initialNumberOfElements - 1
-        
-    }
-    
-    // MARK: - Table view data source
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
-    }
-
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return generatedNumbers.count
-    }
-
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCellWithIdentifier(reuseIdentifier, forIndexPath: indexPath) as! FibonacciTableViewCell
-        cell.configure(generatedNumbers[indexPath.row]);
-
-        return cell
+        tableView.dataSource = dataSource
     }
     
     // MARK: - ScrollView Delegate
@@ -57,19 +30,9 @@ class FibonacciTableViewController: UITableViewController {
     }
     
     // MARK: - Helper methods
-    func generateNextSet(upperBound: Int) -> Bool {
-        for _ in 0..<upperBound {
-            guard let nextNumber =  sequence.next() else {
-                return false
-            }
-            generatedNumbers.append(nextNumber)
-        }
-        return true
+    private func updateCotent() {
         
-    }
-    func updateCotent() {
-        
-        guard generateNextSet(frequencyOfNewData) else {
+        guard dataSource.generateNextSet() else {
             return
         }
         
