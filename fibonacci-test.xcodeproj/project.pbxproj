@@ -12,21 +12,14 @@
 		4D7C1C581C7B040300D66560 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D7C1C571C7B040300D66560 /* Assets.xcassets */; };
 		4D7C1C5B1C7B040300D66560 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D7C1C591C7B040300D66560 /* LaunchScreen.storyboard */; };
 		4D7C1C661C7B040300D66560 /* fibonacci_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C1C651C7B040300D66560 /* fibonacci_testTests.swift */; };
-		4D7C1C711C7B040300D66560 /* fibonacci_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C1C701C7B040300D66560 /* fibonacci_testUITests.swift */; };
 		4D7C1C821C7B049000D66560 /* FibonacciTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C1C811C7B049000D66560 /* FibonacciTableViewController.swift */; };
 		4D7C1C841C7B04A900D66560 /* FibonacciTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C1C831C7B04A900D66560 /* FibonacciTableViewCell.swift */; };
 		4D7C1C861C7B04BC00D66560 /* FibonacciGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C1C851C7B04BC00D66560 /* FibonacciGenerator.swift */; };
+		4D7C1C951C7E09FF00D66560 /* FibonacciGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C1C941C7E09FF00D66560 /* FibonacciGeneratorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		4D7C1C621C7B040300D66560 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4D7C1C451C7B040300D66560 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4D7C1C4C1C7B040300D66560;
-			remoteInfo = "fibonacci-test";
-		};
-		4D7C1C6D1C7B040300D66560 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4D7C1C451C7B040300D66560 /* Project object */;
 			proxyType = 1;
@@ -45,12 +38,10 @@
 		4D7C1C611C7B040300D66560 /* fibonacci-testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "fibonacci-testTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D7C1C651C7B040300D66560 /* fibonacci_testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fibonacci_testTests.swift; sourceTree = "<group>"; };
 		4D7C1C671C7B040300D66560 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4D7C1C6C1C7B040300D66560 /* fibonacci-testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "fibonacci-testUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D7C1C701C7B040300D66560 /* fibonacci_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fibonacci_testUITests.swift; sourceTree = "<group>"; };
-		4D7C1C721C7B040300D66560 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D7C1C811C7B049000D66560 /* FibonacciTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FibonacciTableViewController.swift; path = Controllers/FibonacciTableViewController.swift; sourceTree = "<group>"; };
 		4D7C1C831C7B04A900D66560 /* FibonacciTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FibonacciTableViewCell.swift; path = Views/FibonacciTableViewCell.swift; sourceTree = "<group>"; };
 		4D7C1C851C7B04BC00D66560 /* FibonacciGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FibonacciGenerator.swift; path = Models/FibonacciGenerator.swift; sourceTree = "<group>"; };
+		4D7C1C941C7E09FF00D66560 /* FibonacciGeneratorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FibonacciGeneratorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,13 +59,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4D7C1C691C7B040300D66560 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -83,7 +67,6 @@
 			children = (
 				4D7C1C4F1C7B040300D66560 /* fibonacci-test */,
 				4D7C1C641C7B040300D66560 /* fibonacci-testTests */,
-				4D7C1C6F1C7B040300D66560 /* fibonacci-testUITests */,
 				4D7C1C4E1C7B040300D66560 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,7 +76,6 @@
 			children = (
 				4D7C1C4D1C7B040300D66560 /* fibonacci-test.app */,
 				4D7C1C611C7B040300D66560 /* fibonacci-testTests.xctest */,
-				4D7C1C6C1C7B040300D66560 /* fibonacci-testUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,17 +100,9 @@
 			children = (
 				4D7C1C651C7B040300D66560 /* fibonacci_testTests.swift */,
 				4D7C1C671C7B040300D66560 /* Info.plist */,
+				4D7C1C941C7E09FF00D66560 /* FibonacciGeneratorTests.swift */,
 			);
 			path = "fibonacci-testTests";
-			sourceTree = "<group>";
-		};
-		4D7C1C6F1C7B040300D66560 /* fibonacci-testUITests */ = {
-			isa = PBXGroup;
-			children = (
-				4D7C1C701C7B040300D66560 /* fibonacci_testUITests.swift */,
-				4D7C1C721C7B040300D66560 /* Info.plist */,
-			);
-			path = "fibonacci-testUITests";
 			sourceTree = "<group>";
 		};
 		4D7C1C7E1C7B043600D66560 /* Controllers */ = {
@@ -193,24 +167,6 @@
 			productReference = 4D7C1C611C7B040300D66560 /* fibonacci-testTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		4D7C1C6B1C7B040300D66560 /* fibonacci-testUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4D7C1C7B1C7B040300D66560 /* Build configuration list for PBXNativeTarget "fibonacci-testUITests" */;
-			buildPhases = (
-				4D7C1C681C7B040300D66560 /* Sources */,
-				4D7C1C691C7B040300D66560 /* Frameworks */,
-				4D7C1C6A1C7B040300D66560 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4D7C1C6E1C7B040300D66560 /* PBXTargetDependency */,
-			);
-			name = "fibonacci-testUITests";
-			productName = "fibonacci-testUITests";
-			productReference = 4D7C1C6C1C7B040300D66560 /* fibonacci-testUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -223,12 +179,9 @@
 				TargetAttributes = {
 					4D7C1C4C1C7B040300D66560 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = J57QW76RE9;
 					};
 					4D7C1C601C7B040300D66560 = {
-						CreatedOnToolsVersion = 7.2;
-						TestTargetID = 4D7C1C4C1C7B040300D66560;
-					};
-					4D7C1C6B1C7B040300D66560 = {
 						CreatedOnToolsVersion = 7.2;
 						TestTargetID = 4D7C1C4C1C7B040300D66560;
 					};
@@ -249,7 +202,6 @@
 			targets = (
 				4D7C1C4C1C7B040300D66560 /* fibonacci-test */,
 				4D7C1C601C7B040300D66560 /* fibonacci-testTests */,
-				4D7C1C6B1C7B040300D66560 /* fibonacci-testUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -266,13 +218,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4D7C1C5F1C7B040300D66560 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4D7C1C6A1C7B040300D66560 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -297,15 +242,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D7C1C951C7E09FF00D66560 /* FibonacciGeneratorTests.swift in Sources */,
 				4D7C1C661C7B040300D66560 /* fibonacci_testTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4D7C1C681C7B040300D66560 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4D7C1C711C7B040300D66560 /* fibonacci_testUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,11 +254,6 @@
 			isa = PBXTargetDependency;
 			target = 4D7C1C4C1C7B040300D66560 /* fibonacci-test */;
 			targetProxy = 4D7C1C621C7B040300D66560 /* PBXContainerItemProxy */;
-		};
-		4D7C1C6E1C7B040300D66560 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4D7C1C4C1C7B040300D66560 /* fibonacci-test */;
-			targetProxy = 4D7C1C6D1C7B040300D66560 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -431,6 +364,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "fibonacci-test/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.techbrewers.fibonacci-test";
@@ -442,6 +376,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "fibonacci-test/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.techbrewers.fibonacci-test";
@@ -473,30 +408,6 @@
 			};
 			name = Release;
 		};
-		4D7C1C7C1C7B040300D66560 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "fibonacci-testUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.techbrewers.fibonacci-testUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = "fibonacci-test";
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		4D7C1C7D1C7B040300D66560 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "fibonacci-testUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.techbrewers.fibonacci-testUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = "fibonacci-test";
-				USES_XCTRUNNER = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -516,6 +427,7 @@
 				4D7C1C771C7B040300D66560 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4D7C1C781C7B040300D66560 /* Build configuration list for PBXNativeTarget "fibonacci-testTests" */ = {
 			isa = XCConfigurationList;
@@ -524,14 +436,7 @@
 				4D7C1C7A1C7B040300D66560 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		4D7C1C7B1C7B040300D66560 /* Build configuration list for PBXNativeTarget "fibonacci-testUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4D7C1C7C1C7B040300D66560 /* Debug */,
-				4D7C1C7D1C7B040300D66560 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

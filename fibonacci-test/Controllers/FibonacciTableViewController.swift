@@ -13,7 +13,9 @@ class FibonacciTableViewController: UITableViewController {
     private let reuseIdentifier = "FibonacciTableViewCell"
     private var sequence = GeneratorSequence(FibonacciGenerator())
     private var generatedNumbers  = [UInt]()
-    private let frequencyOfNewData = 20
+
+    private let initialNumberOfElements = 20 // Set the initial number of elements in the data source
+    private let frequencyOfNewData = 10
     private var maxIndexPathReached = 0
    
     private var number: UInt = 0
@@ -21,28 +23,14 @@ class FibonacciTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Load the first 20 numbers in the sequence
-        generateNextSet(30)
-       
+        // Load the first 20 numbers in the sequence and update the maximum Index Path
+        // currently on the tableView
+        generateNextSet(initialNumberOfElements)
+        maxIndexPathReached = initialNumberOfElements - 1
+        
     }
     
-    // MARK: - Helper methods
-    
-    func generateNextSet(upperBound: Int) {
-        for _ in 0..<upperBound {
-            /*
-            guard let nextNumber =  sequence.next() else {
-                return
-            }
-            generatedNumbers.append(nextNumber)
-            */
-            generatedNumbers.append(++number)
-        }
-    }
- 
-
     // MARK: - Table view data source
-
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
@@ -53,34 +41,43 @@ class FibonacciTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        if indexPath.row >= maxIndexPathReached {
-            maxIndexPathReached++
-        
-            if maxIndexPathReached % frequencyOfNewData == 0 {
-                generateNextSet(frequencyOfNewData)
-                tableView.beginUpdates()
-                
-                for  i in indexPath.row..<indexPath.row+frequencyOfNewData {
-                    tableView.insertRowsAtIndexPaths([NSIndexPath(forRow: i, inSection: 0)], withRowAnimation: .Automatic)
-                }
-                tableView.endUpdates()
-            }
-        }
-
         let cell = tableView.dequeueReusableCellWithIdentifier(reuseIdentifier, forIndexPath: indexPath) as! FibonacciTableViewCell
         cell.configure(generatedNumbers[indexPath.row]);
 
         return cell
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    // MARK: - ScrollView Delegate
+    override func scrollViewDidScroll(scrollView: UIScrollView) {
+        let currentPos = scrollView.contentOffset.y
+        let height = scrollView.contentSize.height - tableView.frame.size.height
+        if currentPos >= height {
+            updateCotent()
+        }
     }
-    */
-
+    
+    // MARK: - Helper methods
+    func generateNextSet(upperBound: Int) -> Bool {
+        for _ in 0..<upperBound {
+            guard let nextNumber =  sequence.next() else {
+                return false
+            }
+            generatedNumbers.append(nextNumber)
+        }
+        return true
+        
+    }
+    func updateCotent() {
+        
+        guard generateNextSet(frequencyOfNewData) else {
+            return
+        }
+        
+        tableView.beginUpdates()
+        for  i in maxIndexPathReached..<maxIndexPathReached+frequencyOfNewData {
+            tableView.insertRowsAtIndexPaths([NSIndexPath(forRow: i, inSection: 0)], withRowAnimation: .None)
+        }
+        tableView.endUpdates()
+        maxIndexPathReached += frequencyOfNewData
+    }
 }
