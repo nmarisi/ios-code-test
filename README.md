@@ -9,6 +9,7 @@ Note: The formula for calculating the n'th term in a Fibonacci sequence is:
 It should be written using Objective-C and XCode. Use any open source libraries or frameworks you think you need. It's ok just to target any iPhone device.
 Please don't spend more than 3 hours on it, even if it's not working flawleslly. We're looking for how you think and how you structure your app.
 
-## Submission
+## My implementation
 
-Please fork this repository, write some code and update this README with any relevant detail.
+My implementation doesn't use any third-party libraries and it's written entirely in Swift.
+You will almost certainly need to change the team in the project settings before you can run this app.
