@@ -13,6 +13,12 @@ struct FibonacciGenerator: GeneratorType {
     private var numberTwo: UInt = 0
     private var firstRun = true
     
+    
+    /**
+     Generate the next number in the fibonacci sequence
+     
+     - returns: returns the generated number or nil if the number is beyond UInt.max
+     */
     mutating func next() -> UInt? {
         
         if firstRun {

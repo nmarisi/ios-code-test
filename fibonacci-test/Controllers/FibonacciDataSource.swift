@@ -20,6 +20,11 @@ final class FibonacciDataSource<CellType: UITableViewCell where CellType: Config
         super.init()
     }
     
+    /**
+     Generate the next batch of numbers in the fibonacci sequence.
+     
+     - returns: True if succesful
+     */
     func generateNextSet() -> Bool {
         guard dataProvider.generateNextSet(frequencyOfNewData) else {
             return false

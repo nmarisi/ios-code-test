@@ -19,6 +19,14 @@ final class DataProvider {
         generateNextSet(initialNumberOfElements)
     }
     
+    
+    /**
+     Generate the next set of numbers in the fibonacci sequence
+     
+     - parameter upperBound: the position in the sequence that the generator should stop at
+     
+     - returns: returns true if sucessful, or false if it's not possible to generate more numbers
+     */
     func generateNextSet(upperBound: Int) -> Bool {
         for _ in 0..<upperBound {
             guard let nextNumber =  sequence.next() else {
